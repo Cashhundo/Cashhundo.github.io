@@ -1,74 +1,116 @@
-html{
-    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+html {
+    background-image: linear-gradient(to left, white 0%, #facd8a 100%);
 }
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    margin-left: 10px;
-    width: 1000px;
+    width: 90%;
     background-color: white;
     margin: 15px auto;
     padding: 15px 1.5em;
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
-    background: url("/images/MarvelHeros.jpg")right repeat-y;
+    background: url("/images/MarvelHeros.jpg") right repeat-y;
     background-attachment: fixed;
 }
-a:hover, a:focus{
+ 
+
+a:hover, a:focus {
     font-style: italic;
     color: blueviolet;
+    border: 3px blue;
+    border-style: dotted solid;
 }
-header{
+ 
+header {
     margin-bottom: 3em;
 }
-header h1{
+ 
+header h1 {
     font-size: 175%;
     color: maroon;
     text-indent: 30px;
 }
-header h2{
+ 
+header h2 {
     font-size: 130%;
     color: maroon;
     text-indent: 30px;
 }
-header img{
+ 
+header img {
     float: left;
     margin-left: 2em;
 }
-.shadow{
-    text-shadow: 2px 2px 2px rgb(128,0,0);
+ 
+.shadow {
+    text-shadow: 2px 2px 2px rgb(128, 0, 0);
 }
-article{
-    clear:left;
+ 
+article {
+    clear: left;
     width: 70%;
-    float:left;
+    float: left;
     column-count: 2;
     column-rule: 2px dotted maroon;
     column-gap: 2em;
     margin-left: 2em;
 }
-article h3{
+ 
+article h3 {
     column-span: all;
 }
-article img{
+ 
+article img {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
 }
-article p::first-letter{
+ 
+article p::first-letter {
     font-size: 3em;
     font-weight: bold;
     font-style: italic;
     color: lightgreen;
 }
-aside{
+ 
+
+aside {
     width: 20%;
     float: right;
-    background-color: aliceblue;
+    background-color: #ffebc6;
+    padding: 0.75em 1em;
 }
-footer{
+ 
+footer {
     clear: both;
     border-top: 2px solid maroon;
+}
+ 
+
+p.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    background-color: #0f3460;
+    color: white;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    font-size: 0.9em;
+    z-index: 999;
+    border-top: 2px solid maroon;
+}
+ 
+p.fixed a {
+    color: #ffebc6;
+}
+ 
+p.fixed a:hover,
+p.fixed a:focus {
+    color: white;
+    border: 3px blue;
+    border-style: dotted solid;
 }
