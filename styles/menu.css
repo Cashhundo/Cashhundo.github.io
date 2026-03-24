@@ -2,7 +2,7 @@
    menu.css – Navigation Menu Stylesheet
    ============================================= */
  
-/* 4. NAV MENU BAR STYLES */
+
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
@@ -41,16 +41,14 @@
     border-right: none;
 }
  
-/* Clear float after nav so content flows below */
+
 #nav_menu::after {
     content: "";
     display: table;
     clear: both;
 }
  
-/* =============================================
-   ARTICLE
-   ============================================= */
+
 article {
     float: left;
     width: 70%;
@@ -70,9 +68,7 @@ article h2 {
     margin-top: 2em;
 }
  
-/* =============================================
-   ASIDE
-   ============================================= */
+
 aside {
     float: right;
     width: 25%;
@@ -98,19 +94,19 @@ aside a:focus {
     color: darkblue;
 }
  
-/* 5. aside ol - upper-roman numbering */
+
 aside ol {
     list-style-type: upper-roman;
     padding-left: 1.5em;
 }
  
-/* 6. aside ul - square bullets */
+
 aside ul {
     list-style-type: square;
     padding-left: 1.5em;
 }
  
-/* Clear floats after article and aside */
+
 body::after {
     content: "";
     display: table;
